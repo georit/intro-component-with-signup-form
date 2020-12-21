@@ -1,0 +1,34 @@
+/* *****custom variables***** */
+:root {
+  /* ***primary colors*** */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* ***accent colors*** */
+  --blue: hsl(248, 32%, 49%);
+
+  /* ***neutral colors*** */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ***font*** */
+  --poppins: "Poppins", sans-serif;
+}
+
+/* *****general styles***** */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg-intro-mobile.png") 100% 100% / 100% no-repeat,
+    var(--red);
+  color: var(--white);
+  font-family: var(--poppins);
+  font-size: 16px;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 1980px;
+  overflow: hidden;
+}
