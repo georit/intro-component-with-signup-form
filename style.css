@@ -27,10 +27,128 @@ body {
   background: url("./images/bg-intro-mobile.png") center center no-repeat,
     var(--red);
   color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--poppins);
   font-size: 16px;
   min-height: 100vh;
   min-width: 100vw;
   max-width: 1980px;
   overflow-x: hidden;
+  text-align: center;
+}
+
+/* *****wrapper***** */
+div.wrapper {
+  padding: 5rem 0;
+  width: 88%;
+}
+
+div.intro {
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+div.intro h1.main-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+div.intro p.intro-info {
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+div.sign-up,
+form.sign-up-form,
+form.sign-up div.input-container,
+form.sign-up-form label,
+form.sign-up-form input {
+  width: 100%;
+}
+
+div.sign-up p.try-it-free {
+  background-color: var(--blue);
+  color: hsla(0, 0%, 100%, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+div.sign-up p.try-it-free span.bold-txt {
+  color: var(--white);
+  font-weight: 600;
+}
+
+div.sign-up p.try-it-free,
+div.sign-up form.sign-up-form {
+  border-radius: 10px;
+  box-shadow: 0 8px 0 hsla(0, 0%, 0%, 0.1);
+}
+
+div.sign-up form.sign-up-form {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+div.sign-up form.sign-up-form div.input-container {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+div.sign-up form.sign-up-form input {
+  border: 1px solid hsla(246, 25%, 77%, 0.6);
+  border-radius: 5px;
+  color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+div.sign-up form.sign-up-form div.input-container.empty input {
+  border: 1px solid var(--red);
+}
+
+div.sign-up form.sign-up-form div.input-container svg.icon-error {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+div.sign-up form.sign-up-form div.input-container p.error-msg {
+  color: var(--red);
+  font-size: 0.6rem;
+  font-style: italic;
+  text-align: right;
+  display: none;
+}
+
+div.sign-up form.sign-up-form div.input-container.empty svg.icon-error,
+div.sign-up form.sign-up-form div.input-container.empty p.error-msg {
+  display: block;
+}
+
+div.sign-up form.sign-up-form input[type="submit"] {
+  background-color: var(--green);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+div.sign-up form.sign-up-form p.terms {
+  color: var(--grayish-blue);
+  font-size: 0.7rem;
+  padding: 1rem;
+}
+
+div.sign-up form.sign-up-form p.terms a.terms-link:link,
+div.sign-up form.sign-up-form p.terms a.terms-link:visited {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
 }

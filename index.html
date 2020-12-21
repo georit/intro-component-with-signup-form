@@ -33,38 +33,101 @@
           thereafter
         </p>
         <form class="sign-up-form">
-          <label for="first-name">
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="First Name"
-            />
-          </label>
-          <label for="last-name">
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last Name"
-            />
-          </label>
-          <label for="email">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-          </label>
-          <label for="password">
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
-          </label>
+          <div class="first-name-container input-container">
+            <label for="first-name">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First Name"
+              />
+            </label>
+            <svg
+              class="icon-error"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="error-msg first-name">First Name cannot be empty</p>
+          </div>
+
+          <div class="last-name-container input-container">
+            <label for="last-name">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last Name"
+              />
+            </label>
+            <svg
+              class="icon-error"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="error-msg last-name">Last Name cannot be empty</p>
+          </div>
+
+          <div class="email-container input-container">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+            </label>
+            <svg
+              class="icon-error"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="error-msg email">Email Address cannot be empty</p>
+          </div>
+
+          <div class="password-container input-container">
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </label>
+            <svg
+              class="icon-error"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="error-msg password">Password cannot be empty</p>
+          </div>
           <input type="submit" value="CLAIM YOUR FREE TRIAL" />
           <p class="terms">
             By clicking the button, you are agreeing to our
