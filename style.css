@@ -139,6 +139,7 @@ div.sign-up form.sign-up-form input[type="submit"] {
   border: none;
   color: var(--white);
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 div.sign-up form.sign-up-form p.terms {
@@ -152,6 +153,7 @@ div.sign-up form.sign-up-form p.terms a.terms-link:visited {
   color: var(--red);
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 /* *****media queries***** */
@@ -171,6 +173,11 @@ div.sign-up form.sign-up-form p.terms a.terms-link:visited {
     max-width: 84%;
   }
 
+  div.intro,
+  div.sign-up {
+    max-width: 585px;
+  }
+
   div.intro {
     display: flex;
     flex-flow: column nowrap;
@@ -182,6 +189,15 @@ div.sign-up form.sign-up-form p.terms a.terms-link:visited {
   div.intro h1.main-heading {
     font-size: 2.2rem;
     line-height: 1.1;
+  }
+
+  div.sign-up form.sign-up-form input[type="submit"]:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+  }
+
+  div.sign-up form.sign-up-form p.terms a.terms-link:hover {
+    color: var(--blue);
   }
 }
 
